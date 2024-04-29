@@ -7,7 +7,7 @@ using namespace testing;
 
 TEST(Filterstest, GetFiltersTest) {
     Filters obj;
-    const QSet<QString> expectedFilterSet = {"Air Filter", "Cabin Filter", "Oil Filter"};
+    const QSet<QString> expectedFilterSet = {"Air Filter","Fuel Filter","Oil Filter"};
     const QSet<QString> actualFilterSet = obj.getfilterlist();
 
     EXPECT_EQ(expectedFilterSet, actualFilterSet);

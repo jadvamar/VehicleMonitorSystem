@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>808</width>
+    <height>611</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QTableWidget" name="tableWidget">
@@ -32,12 +32,12 @@
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>631</width>
-        <height>331</height>
+        <width>561</width>
+        <height>271</height>
        </rect>
       </property>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>209</number>
+       <number>180</number>
       </attribute>
       <attribute name="verticalHeaderVisible">
        <bool>false</bool>
@@ -46,7 +46,7 @@
        <number>40</number>
       </attribute>
       <attribute name="verticalHeaderDefaultSectionSize">
-       <number>101</number>
+       <number>80</number>
       </attribute>
       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
        <bool>false</bool>
@@ -89,18 +89,18 @@
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>621</width>
-        <height>331</height>
+        <width>561</width>
+        <height>271</height>
        </rect>
       </property>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>206</number>
+       <number>180</number>
       </attribute>
       <attribute name="verticalHeaderVisible">
        <bool>false</bool>
       </attribute>
       <attribute name="verticalHeaderDefaultSectionSize">
-       <number>101</number>
+       <number>80</number>
       </attribute>
       <row>
        <property name="text">
@@ -121,15 +121,36 @@
        <property name="text">
         <string>Fluid</string>
        </property>
+       <property name="background">
+        <color>
+         <red>39</red>
+         <green>122</green>
+         <blue>135</blue>
+        </color>
+       </property>
       </column>
       <column>
        <property name="text">
         <string>Status</string>
        </property>
+       <property name="background">
+        <color>
+         <red>39</red>
+         <green>122</green>
+         <blue>135</blue>
+        </color>
+       </property>
       </column>
       <column>
        <property name="text">
         <string>Date</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>39</red>
+         <green>122</green>
+         <blue>135</blue>
+        </color>
        </property>
       </column>
      </widget>
@@ -150,6 +171,9 @@
       <pointsize>16</pointsize>
       <bold>false</bold>
      </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>Filters</string>
@@ -181,7 +205,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>808</width>
      <height>17</height>
     </rect>
    </property>

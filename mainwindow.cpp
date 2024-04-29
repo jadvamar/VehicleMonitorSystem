@@ -174,6 +174,7 @@ void MainWindow::fluidloadStatus(int row, int column, QString status)
         if (!pixmap.isNull()) {
             label1->setPixmap(pixmap);
             label1->setScaledContents(true);
+
         } else {
             label1->setText("Image not found");
         }
@@ -195,13 +196,19 @@ void MainWindow::handlefilterValueChange()
     a-=7;
     b-=10;
     c-=13;
+
+    if(a < 25){
+        a=100;
+        b=100;
+        c=100;
+    }
 }
 
 void MainWindow::handlefluidValueChange()
 {
     if((a<=100) && (a>75))    fluidloadStatus(0,1,"good");
     if((b<=110) && (b>75))    fluidloadStatus(1,1,"good");
-    if((c<=140) && (c>75))    fluidloadStatus(2,1,"good");
+    if((c<=110) && (c>75))    fluidloadStatus(2,1,"good");
     if((a<75) && (a>50))    fluidloadStatus(0,1,"warning");
     if((b<75) && (b>50))    fluidloadStatus(1,1,"warning");
     if((c<75) && (c>50))    fluidloadStatus(2,1,"warning");
@@ -209,9 +216,16 @@ void MainWindow::handlefluidValueChange()
     if((b<50) && (b>25))    fluidloadStatus(1,1,"critical");
     if((c<50) && (c>25))    fluidloadStatus(2,1,"critical");
 
+
     a-=7;
     b-=10;
     c-=13;
+
+    if(a < 25){
+        a=100;
+        b=100;
+        c=100;
+    }
 }
 
 void MainWindow::on_pushButton_clicked()
